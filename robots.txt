@@ -1,1 +1,1 @@
-Sitemap: /lab-website-template/sitemap.xml
+Sitemap: /sitemap.xml
