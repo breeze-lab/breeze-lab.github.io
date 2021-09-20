@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: breeze-lab.org/sitemap.xml
