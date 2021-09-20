@@ -1,4 +1,4 @@
-p { margin: 10px 0; text-align: justify; line-height: 1.5; }
+p { margin: 10px 0; text-align: left; line-height: 1.5; }
 
 p:first-child { margin-top: 0; }
 

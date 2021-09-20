@@ -2,11 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/members/jon-breeze.html</loc>
-<lastmod>2021-09-20T03:02:43+01:00</lastmod>
+<lastmod>2021-09-20T18:56:50+01:00</lastmod>
 </url>
 <url>
 <loc>/2017/07/19/rs.html</loc>
 <lastmod>2017-07-19T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>/2017/08/10/lates.html</loc>
+<lastmod>2017-08-10T00:00:00+01:00</lastmod>
 </url>
 <url>
 <loc>/2017/09/30/dicke.html</loc>
@@ -37,6 +41,9 @@
 </url>
 <url>
 <loc>/tools/</loc>
+</url>
+<url>
+<loc>/masers/</loc>
 </url>
 <url>
 <loc>/news/</loc>
