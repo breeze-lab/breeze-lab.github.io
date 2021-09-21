@@ -112,6 +112,7 @@ Breeze Lab
   <!-- third party scripts -->
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 <!-- site-wide javascript scripts -->
 <script src="/js/anchors.js"></script>
@@ -224,9 +225,19 @@ Breeze Lab
       
     ><div class="section"><h1 id="room-temperature-solid-state-masers"><i class="fas fa-satellite"></i>Room-temperature solid-state masers</h1>
 
-<p><strong>MASER</strong> is an acronym for <strong>M</strong>icrowave <strong>A</strong>mplification by <strong>S</strong>timulated <strong>E</strong>mission of <strong>R</strong>adiation.  Masers work in exactly the same way as lasers and in fact predated them by XX years.  Stimulated emission is the process whereby a <em>photon</em> (particle of light) can induce an electron in an excited state to return to its ground state whilst emitting another photon with the same energy and, importantly, the same phase - <em>i.e.</em> coherent.  This is different to <em>spontaneous emission</em> where an electron in an excited state will randomly drop down into its ground state, emitting a photon in the process.  Both these process were theoretically discovered by Einstein in 1916 [<a href="ref">1</a>]</p>
+</div></section><section
+      class="background"
+      
+      
+    ><div class="section">
 
-<p>[1] Einstein, A (1916). “<em>Strahlungs-emission und -absorption nach der Quantentheorie</em>”. Verhandlungen der Deutschen Physikalischen Gesellschaft. 18: 318–323. Bibcode:1916DPhyG..18..318E.</p>
+<h1 id="maser-basics">Maser basics</h1>
+
+<p><strong>MASER</strong> is an acronym for <strong>M</strong>icrowave <strong>A</strong>mplification by <strong>S</strong>timulated <strong>E</strong>mission of <strong>R</strong>adiation.  Masers work in exactly the same way as lasers and in fact predated them by XX years.  Stimulated emission is the process whereby a <em>photon</em> (particle of light) can induce an electron in an excited state to return to its ground state whilst emitting another photon with the same energy and, importantly, the same phase - <em>i.e.</em> coherent.  This process is different to <em>spontaneous emission</em> where an electron in an excited state will randomly drop down into its ground state, emitting a photon in the process.  Both these process were theoretically discovered by Einstein in 1916 [<a href="https://ui.adsabs.harvard.edu/abs/1916DPhyG..18..318E/abstract">1</a>].</p>
+
+<p>Sustained stimulated emission produces an exponential growth in the number of photons over time if there is a large number of <em>emitters</em> - electrons in an excited state.  The exponential growth can be explained simply: a single photon stimulates an electron to drop down to the ground state, emitting a coherent photon.  There are now two photons, these stimulate another two photons to be emitted, now we have four.  These four stimulate another four, <em>etc</em>, until there is a large number of photons.  Within a real device, photons are sometimes lost or absorbed - if the rate of production of photons by stimulated emission exceeds the rate of loss of photons, then the signal will still increase.  The condition where the rates of production and loss are equal is known as the <em>threshold</em>, so if the rate of photon production is greater than the rate of loss, then the device is operating <em>above threshold</em>.</p>
+
+<p>The ability to amplify a single photon into a huge number is why masers can be used as low-noise amplifiers.  They have low intrinsic noise because the rate of spontaneous emission is very low at microwave frequencies.  The superior low-noise amplification performance of masers led to them being used in radio astronomy and deep-space exploration.</p>
 
 <p>The first working device was demonstrated by Charles Townes more than 60 years ago.  Why are we interested in the MASER?  And how did we solve a 60 year old mystery – making masers work at room temperature and in the earth’s magnetic field?</p>
 
@@ -242,6 +253,8 @@ Breeze Lab
 <h1 id="basic-theory-of-masers-and-lasers">Basic theory of MASERs and LASERs</h1>
 
 <p>Both maser and lasers</p>
+
+\[\nabla_\boldsymbol{x} J(\boldsymbol{x})\]
 
 </div></section><section
       class="background"
