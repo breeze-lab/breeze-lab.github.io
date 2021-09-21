@@ -1,12 +1,23 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+
 function myFunction() {
-  var x = document.getElementById("second_nav");
-  if (x.style.display == "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+  document.getElementById("myDropdown").classList.toggle("show");
+
+  document.getElementById("burgerbtn").innerHTML = '<i id="burger_icon" class="fa fa-bars"></i>';
+//  document.getElementById("burger_icon").classList.add(class='fa fa-times');
+//          openDropdown.classList.remove('show');
 }
+
+
+/*
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+  }
+*/
 
 jQuery(document).ready(function($){
 
