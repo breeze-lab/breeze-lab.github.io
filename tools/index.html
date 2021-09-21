@@ -110,13 +110,16 @@ Breeze Lab - Tools
       <link href="/css/two-col.css" rel="stylesheet" />
       <link href="/css/util.css" rel="stylesheet" />
   <!-- third party scripts -->
-<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/popper.js@1.16.1/dist/popper.min.js.map"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 <!-- site-wide javascript scripts -->
 <script src="/js/anchors.js"></script>
   <script src="/js/fetch-tags.js"></script>
+  <script src="/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/mediumish.js"></script>
   <script src="/js/search.js"></script>
   <script src="/js/tooltips.js"></script>
   <script src="/js/true-hide.js"></script>
@@ -125,7 +128,7 @@ Breeze Lab - Tools
 </head>
 
   <body>
-    <header class="background" style="--background: url('/images/maser1.jpg')" data-dark="true">
+    <header id="myTopnav" class="background" style="--background: url('/images/maser1.jpg')" data-dark="true">
   <a
     href="/"
     class="logo_row"
@@ -215,8 +218,13 @@ Breeze Lab - Tools
       <span class="logo_text">Breeze Lab</span>
     
   </a>
-  <nav class="nav_row"><a class="link" href="/pubs/" data-tooltip="Published works"  data-text="true" data-style=""><span class="truncate">Research</span></a><a class="link" href="/team/" data-tooltip="About our team"  data-text="true" data-style=""><span class="truncate">Team</span></a><a class="link" href="/news/" data-tooltip="News & Views"  data-text="true" data-style=""><span class="truncate">News</span></a><a class="link" href="/tools/" data-tooltip="Hardware, software, and more"  data-text="true" data-style=""><span class="truncate">Tools</span></a><a class="link" href="/contact/" data-tooltip="Email, address, and location"  data-text="true" data-style=""><span class="truncate">Contact</span></a></nav>
+  <nav class="nav_row" id="nav_row"><a class="link" href="/pubs/" data-tooltip="Published works"  data-text="true" data-style=""><span class="truncate">Research</span></a><a class="link" href="/team/" data-tooltip="About our team"  data-text="true" data-style=""><span class="truncate">Team</span></a><a class="link" href="/news/" data-tooltip="News & Views"  data-text="true" data-style=""><span class="truncate">News</span></a><a class="link" href="/tools/" data-tooltip="Hardware, software, and more"  data-text="true" data-style=""><span class="truncate">Tools</span></a><a class="link" href="/contact/" data-tooltip="Email, address, and location"  data-text="true" data-style=""><span class="truncate">Contact</span></a><a href="javascript:void(0);" class="burger" onclick="myFunction()">
+      <i class="fa fa-bars"></i>  </a>
+  </nav>
+
 </header>
+
+<nav class="second_nav" id="second_nav"><a class="link" href="/pubs/" data-tooltip="Published works"  data-text="true" data-style=""><span class="truncate">Research</span></a><a class="link" href="/team/" data-tooltip="About our team"  data-text="true" data-style=""><span class="truncate">Team</span></a><a class="link" href="/news/" data-tooltip="News & Views"  data-text="true" data-style=""><span class="truncate">News</span></a><a class="link" href="/tools/" data-tooltip="Hardware, software, and more"  data-text="true" data-style=""><span class="truncate">Tools</span></a><a class="link" href="/contact/" data-tooltip="Email, address, and location"  data-text="true" data-style=""><span class="truncate">Contact</span></a></nav>
 
     <main>
       <section

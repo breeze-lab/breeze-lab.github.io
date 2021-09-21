@@ -110,13 +110,16 @@ Breeze Lab - Research
       <link href="/css/two-col.css" rel="stylesheet" />
       <link href="/css/util.css" rel="stylesheet" />
   <!-- third party scripts -->
-<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/popper.js@1.16.1/dist/popper.min.js.map"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 <!-- site-wide javascript scripts -->
 <script src="/js/anchors.js"></script>
   <script src="/js/fetch-tags.js"></script>
+  <script src="/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/mediumish.js"></script>
   <script src="/js/search.js"></script>
   <script src="/js/tooltips.js"></script>
   <script src="/js/true-hide.js"></script>
@@ -125,7 +128,7 @@ Breeze Lab - Research
 </head>
 
   <body>
-    <header class="background" style="--background: url('/images/maser1.jpg')" data-dark="true">
+    <header id="myTopnav" class="background" style="--background: url('/images/maser1.jpg')" data-dark="true">
   <a
     href="/"
     class="logo_row"
@@ -215,8 +218,13 @@ Breeze Lab - Research
       <span class="logo_text">Breeze Lab</span>
     
   </a>
-  <nav class="nav_row"><a class="link" href="/pubs/" data-tooltip="Published works"  data-text="true" data-style=""><span class="truncate">Research</span></a><a class="link" href="/team/" data-tooltip="About our team"  data-text="true" data-style=""><span class="truncate">Team</span></a><a class="link" href="/news/" data-tooltip="News & Views"  data-text="true" data-style=""><span class="truncate">News</span></a><a class="link" href="/tools/" data-tooltip="Hardware, software, and more"  data-text="true" data-style=""><span class="truncate">Tools</span></a><a class="link" href="/contact/" data-tooltip="Email, address, and location"  data-text="true" data-style=""><span class="truncate">Contact</span></a></nav>
+  <nav class="nav_row" id="nav_row"><a class="link" href="/pubs/" data-tooltip="Published works"  data-text="true" data-style=""><span class="truncate">Research</span></a><a class="link" href="/team/" data-tooltip="About our team"  data-text="true" data-style=""><span class="truncate">Team</span></a><a class="link" href="/news/" data-tooltip="News & Views"  data-text="true" data-style=""><span class="truncate">News</span></a><a class="link" href="/tools/" data-tooltip="Hardware, software, and more"  data-text="true" data-style=""><span class="truncate">Tools</span></a><a class="link" href="/contact/" data-tooltip="Email, address, and location"  data-text="true" data-style=""><span class="truncate">Contact</span></a><a href="javascript:void(0);" class="burger" onclick="myFunction()">
+      <i class="fa fa-bars"></i>  </a>
+  </nav>
+
 </header>
+
+<nav class="second_nav" id="second_nav"><a class="link" href="/pubs/" data-tooltip="Published works"  data-text="true" data-style=""><span class="truncate">Research</span></a><a class="link" href="/team/" data-tooltip="About our team"  data-text="true" data-style=""><span class="truncate">Team</span></a><a class="link" href="/news/" data-tooltip="News & Views"  data-text="true" data-style=""><span class="truncate">News</span></a><a class="link" href="/tools/" data-tooltip="Hardware, software, and more"  data-text="true" data-style=""><span class="truncate">Tools</span></a><a class="link" href="/contact/" data-tooltip="Email, address, and location"  data-text="true" data-style=""><span class="truncate">Contact</span></a></nav>
 
     <main>
       <section
@@ -227,41 +235,34 @@ Breeze Lab - Research
 
 <h3 class="center" id="jump-to-full-list-of-publications"><a href="#publications">Jump to full list of publications</a></h3>
 
-<h1 id="highlights">Highlights</h1>
-
 </div></section><section
       class="background"
       
       
     ><div class="section">
+<h1 id="highlights">Highlights</h1>
 
 <div class="feature">
   <a href="https://www.nature.com/articles/nature25970" class="feature_image"><img src="/images/nature_cover2.jpg" loading="lazy" style="width:150px" /></a>
   <div class="feature_text"><p class="feature_headline"></p>
-<p>Room-temperature masers based upon photo-excited triplets in organic molecular crystals, such as pentacene-doped <em>p</em>-terphenyl, have poor thermal and mechanical properties and can only operate for short durations typically ~1 ms.  Here we demonstrated a room-temperature maser based on optically-pumped nitrogen–vacancy defect centres in diamond that could operate continuously.</p>
-
 <p><strong><a href="https://www.nature.com/articles/nature25970">Continuous-wave room-temperature diamond maser</a></strong><br />
 <em>Jonathan D. Breeze, Enrico Salvadori, Juna Sathian, Neil McN Alford, Christopher W. M. Kay</em><br />
 <strong>Nature</strong>, 01 Mar 2018</p>
+
+<p>Room-temperature masers based upon photo-excited triplets in organic molecular crystals, such as pentacene-doped <em>p</em>-terphenyl, have poor thermal and mechanical properties and can only operate for short durations typically ~1 ms.  Here we demonstrated a room-temperature maser based on optically-pumped nitrogen–vacancy defect centres in diamond that could operate continuously.</p>
 
 
   </div>
 </div>
 
-</div></section><section
-      class="background"
-      
-      
-    ><div class="section">
-
 <div class="feature">
   <a href="https://doi.org/f36684" class="feature_image"><img src="/images/nature_cover1.jpg" loading="lazy" style="width:150px" /></a>
   <div class="feature_text"><p class="feature_headline"></p>
-<p>The maser is the microwave-frequency precursor of the now ubiquitous laser. But it had little technological impact compared with the laser because of inconvenience: masers typically require vacuum and cryogenic-temperature operating conditions. Overcoming these obstacles would pave the way for significant maser-based innovations from molecular biology to medicine, security, radio astronomy and quantum technologies.  Here we demonstrated the first solid-state room-temperature maser, based on an organic molecular crystal of pentacene-doped <em>p</em>-terphenyl.</p>
-
 <p><strong><a href="https://doi.org/f36684">Room-temperature solid-state maser</a></strong><br />
 <em>Mark Oxborrow, Jonathan D. Breeze, Neil M. Alford</em><br />
 <strong>Nature</strong>, 15 Aug 2012</p>
+
+<p>The maser is the microwave-frequency precursor of the now ubiquitous laser. But it had little technological impact compared with the laser because of inconvenience: masers typically require vacuum and cryogenic-temperature operating conditions. Overcoming these obstacles would pave the way for significant maser-based innovations from molecular biology to medicine, security, radio astronomy and quantum technologies.  Here we demonstrated the first solid-state room-temperature maser, based on an organic molecular crystal of pentacene-doped <em>p</em>-terphenyl.</p>
 
 
   </div>
@@ -274,12 +275,6 @@ Breeze Lab - Research
     ><div class="section">
 
 <h1 id="patents">Patents</h1>
-
-</div></section><section
-      class="background"
-      
-      
-    ><div class="section">
 
 <div class="feature">
   <a href="https://patents.google.com/patent/US9293890B2/en?inventor=Jonathan+Breeze" class="feature_image"><img src="/images/patent1-thumb.png" loading="lazy" style="width:100px" /></a>
