@@ -6,7 +6,7 @@
 
 .feature .feature_image { flex-shrink: 0; box-shadow: 0 0 5px 0 #00000030; }
 
-.feature .feature_image img { width: 300px; }
+.feature .feature_image img { width: 240px; }
 
 .feature:nth-child(odd) .feature_image { order: -1; margin-right: 40px; }
 
