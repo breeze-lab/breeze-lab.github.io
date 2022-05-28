@@ -1,4 +1,4 @@
-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 0px; color: #ffffff; background: #000000; box-shadow: 0 0 5px 0 #00000030; /*  @media (max-width: 600px) { .logo_row { flex-direction: column; } .nav_row { flex-direction: column; justify-content: center; width: 100%; .link { width: 100%; } } }*/ }
+header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 0px; color: #ffffff; background: #000000; box-shadow: 0 0 8px 0 #00000030; /*  @media (max-width: 600px) { .logo_row { flex-direction: column; } .nav_row { flex-direction: column; justify-content: center; width: 100%; .link { width: 100%; } } }*/ }
 
 header * { font-family: "Poppins", sans-serif; }
 

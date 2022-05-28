@@ -1,4 +1,4 @@
-.gallery { display: grid; grid-gap: 40px; justify-content: center; align-items: center; margin: 40px 0; }
+.gallery { display: grid; grid-gap: 30px; justify-content: center; align-items: center; margin: 40px 0; }
 
 .gallery:first-child { margin-top: 0; }
 

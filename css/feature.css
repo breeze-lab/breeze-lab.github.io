@@ -4,7 +4,7 @@
 
 .feature:last-child { margin-bottom: 0; }
 
-.feature .feature_image { flex-shrink: 0; box-shadow: 0 0 5px 0 #00000030; }
+.feature .feature_image { flex-shrink: 0; box-shadow: 0 0 8px 0 #00000030; }
 
 .feature .feature_image img { width: 240px; }
 
