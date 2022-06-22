@@ -1,0 +1,11 @@
+<!-- third party scripts -->
+<script src="https://unpkg.com/popper.js@1.16.1/dist/popper.min.js.map"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- site-wide javascript scripts -->
+{% for file in site.static_files %}
+  {%- if file.path contains "/js" -%}
+    <script src="{{ file.path | relative_url }}"></script>
+  {% endif -%}
+{% endfor %}
