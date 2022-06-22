@@ -1,0 +1,27 @@
+---
+---
+
+@import "palettes";
+@import "theme";
+@import "mixins";
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+}
