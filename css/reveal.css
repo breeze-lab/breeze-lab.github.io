@@ -1,0 +1,7 @@
+.reveal_ready .reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.65s ease, transform 0.65s ease; will-change: opacity, transform; }
+
+.reveal_ready .reveal.is_visible { opacity: 1; transform: none; will-change: auto; }
+
+@media (prefers-reduced-motion: reduce) { .reveal_ready .reveal { opacity: 1; transform: none; transition: none; } }
+
+/*# sourceMappingURL=reveal.css.map */

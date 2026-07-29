@@ -1,4 +1,4 @@
-.post_nav { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; color: #9e9e9e; }
+.post_nav { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; color: var(--text-muted); }
 
 .post_nav > * { width: 45%; }
 

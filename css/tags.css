@@ -1,9 +1,9 @@
 .tags { max-width: 100%; }
 
-.tags .tag { display: inline-block; max-width: 100%; margin: 5px; padding: 5px 15px; border-radius: 999px; color: #000000; background: #9fa8da; text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; transition: background 0.25s ease; }
+.tags .tag { display: inline-block; max-width: 100%; margin: 5px; padding: 5px 15px; border-radius: 999px; color: var(--text); background: var(--accent-soft); text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; transition: background 0.25s ease; }
 
-.tags .tag:hover { background: #9e9e9e; }
+.tags .tag:hover { background: var(--hover-bg); }
 
-.tags .tag[data-highlight="true"] { background: #3f51b5; }
+.tags .tag[data-highlight="true"] { background: var(--accent); }
 
 /*# sourceMappingURL=tags.css.map */

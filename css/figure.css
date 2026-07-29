@@ -4,7 +4,13 @@
 
 .figure:last-child { margin-bottom: 0; }
 
-.figure .figure_image { max-width: 100%; max-height: 100%; }
+.figure .figure_image { max-width: 100%; max-height: 100%; border-radius: 6px; }
+
+.figure .figure_image[href] { display: block; overflow: hidden; }
+
+.figure .figure_image[href] img { transition: transform 0.5s ease; }
+
+.figure .figure_image[href]:hover img, .figure .figure_image[href]:focus-visible img { transform: scale(1.05); }
 
 .figure .figure_caption { margin-top: 10px; margin-bottom: 0; font-style: italic; text-align: center; }
 

@@ -1,14 +1,66 @@
-// colors for links, tags, etc.
-// see colors.scss for available colors
-$accent: $indigo-500;
-$light-accent: $indigo-200;
-$dark-accent: $indigo-900;
+// ---------------------------------------------------------------------------
+// THEME
+//
+// Colour lives as CSS custom properties (design tokens) so light/dark can be
+// switched at runtime. The token VALUES are defined once in all.scss — this
+// file only aliases them onto the SCSS names components already use, so no
+// component needs to know anything about theming.
+//
+// IMPORTANT: these are var() references, not colours. Never pass one to a Sass
+// colour function — darken(), lighten(), rgba(), mix() etc. cannot operate on
+// var() and will fail the build. Add a new token instead.
+// ---------------------------------------------------------------------------
+
+// accents
+$accent: var(--accent); // links, buttons, active tags
+$light-accent: var(--accent-light); // decorative FOREGROUND (icons)
+$accent-soft: var(--accent-soft); // tinted BACKGROUND (tag pills, anchor target)
+$dark-accent: var(--accent-dark);
+$accent-contrast: var(--accent-contrast); // text placed on top of $accent
+
+// page surfaces
+$surface: var(--surface); // page background
+$surface-alt: var(--surface-alt); // alternating / raised sections
+$card-veil: var(--card-veil); // translucent panel over a page image
+$panel-veil: var(--panel-veil); // main reading panel on content pages
+$page-scrim: rgba(var(--page-scrim-rgb), var(--page-scrim-a)); // scroll-animated
+$on-veil-muted: var(--on-veil-muted); // secondary text directly on the veil
+$on-veil-accent: var(--on-veil-accent); // accent text directly on the veil
+
+// text
+$text: var(--text); // body text
+$text-muted: var(--text-muted); // captions, metadata, roles
+
+// lines
+$border: var(--border); // hairlines, card edges
+$border-strong: var(--border-strong); // table + input borders, quote rules
+
+// neutral hover fill for buttons and tag pills
+$hover-bg: var(--hover-bg);
+
+// chrome — header + footer. Follows the theme (so the toggle changes the whole
+// page, not just the content column). $chrome-bg is translucent; $chrome-solid
+// is the opaque fallback for browsers without backdrop-filter.
+$chrome-bg: var(--chrome-bg);
+$chrome-solid: var(--chrome-solid);
+$chrome-text: var(--chrome-text);
+$chrome-text-muted: var(--chrome-text-muted);
+$chrome-border: var(--chrome-border);
+$chrome-hover: var(--chrome-hover);
+
+// tooltips — deliberately dark in BOTH themes
+$tooltip-bg: var(--tooltip-bg);
+$tooltip-text: var(--tooltip-text);
+
+// "dark" section blocks (section.html … dark=true) — dark in both themes
+$dark-block-bg: var(--dark-block-bg);
+$dark-block-text: var(--dark-block-text);
 
 // font types
 // also see /_includes/fonts.html to change fonts
-$serif: "Lora", serif; // font name, fallback font type
-$sans: "Poppins", sans-serif;
-$mono: "Cousine", monospace;
+$serif: var(--font-serif);
+$sans: var(--font-sans);
+$mono: var(--font-mono);
 
 // line spacing
 $spacing: 1.2;
@@ -18,7 +70,7 @@ $fast: 0.25s ease;
 $slow: 0.5s ease;
 
 // effects
-$shadow: 0 0 8px 0 #00000030;
+$shadow: var(--shadow);
 
 // screen widths
 // used by various components

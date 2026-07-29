@@ -1,0 +1,11 @@
+body.panel { background: transparent; }
+
+body.panel section, body.panel section:nth-of-type(even), body.panel section.background[data-dark="true"], body.panel section.background[data-dark="false"] { background: transparent; color: var(--text); padding: 10px clamp(10px, 3vw, 28px); }
+
+body.panel section.background::before { display: none; }
+
+body.panel section > .section { container-type: inline-size; container-name: panel; box-sizing: border-box; max-width: 940px; margin: 0 auto; padding: clamp(18px, 3.5vw, 34px) clamp(18px, 4vw, 40px); background: var(--panel-veil); border: 1px solid var(--border); border-radius: 12px; }
+
+body.panel section + section { padding-top: 0; }
+
+/*# sourceMappingURL=panel.css.map */
