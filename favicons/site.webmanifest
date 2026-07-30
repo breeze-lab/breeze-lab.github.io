@@ -1,14 +1,15 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Breeze Lab",
+    "short_name": "Breeze Lab",
     "icons": [
         {
-            "src": "favicons/android.png",
+            "src": "android.png",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any maskable"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#14181f",
+    "background_color": "#14181f",
     "display": "standalone"
 }
