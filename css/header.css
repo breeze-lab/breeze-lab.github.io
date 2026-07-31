@@ -108,7 +108,7 @@ header .nav_row .burger { display: none; font-size: 24px; }
 
 [data-logo="atom"]:root .logo_row:hover .logo_orbit3, [data-logo="atom"]:root .logo_row:focus-visible .logo_orbit3 { transform: rotate(120deg); transition-delay: 0.16s; }
 
-[data-logo="atom"]:root .logo_row:hover .logo_nucleus, [data-logo="atom"]:root .logo_row:focus-visible .logo_nucleus { r: 3.4px; }
+[data-logo="atom"]:root .logo_row:hover .logo_nucleus, [data-logo="atom"]:root .logo_row:focus-visible .logo_nucleus { r: 2px; }
 
 [data-logo="atom"]:root .logo_row:hover .logo_orbits, [data-logo="atom"]:root .logo_row:focus-visible .logo_orbits { animation: logo_spin 9s linear infinite; }
 

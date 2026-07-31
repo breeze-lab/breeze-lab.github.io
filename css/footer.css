@@ -4,9 +4,9 @@ footer * { font-family: var(--font-sans); }
 
 footer a { color: currentColor; text-decoration: none; }
 
-footer .footer_grid { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 4px 20px; max-width: 1080px; margin: 0 auto; }
+footer .footer_grid { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 4px 20px; max-width: 1080px; margin: 0 auto; container-type: inline-size; }
 
-footer .footer_meta { margin: 0; font-size: 0.74rem; line-height: 1.5; text-align: left; }
+footer .footer_meta { margin: 0; font-size: clamp(0.82rem, calc(2.1cqw - 5.5px), 1.15rem); line-height: 1.5; text-align: left; }
 
 footer .footer_meta .footer_lab { color: var(--text); font-weight: 500; }
 
